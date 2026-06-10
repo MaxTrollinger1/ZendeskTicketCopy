@@ -93,7 +93,7 @@ function ButtonPlacementHandler(ticketTabContainer) {
 }
 
 async function RegisterObserver() {
-  const ticketTabContainer = await waitForElement("div[aria-label='Active workspaces']");
+  const ticketTabContainer = await waitForElement("body");
   const mainPaneContainer = await waitForElement("#main_panes");
 
   const callback = () => {
